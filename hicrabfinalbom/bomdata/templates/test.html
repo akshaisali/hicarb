@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM Management | HiCarb Engineering</title>
+    <link rel="stylesheet" href="{% static 'records/css/styles.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container my-5">
+        <div class="text-center">
+            <h1 class="display-4 text-primary">HiCarb Engineering</h1>
+            <p class="lead">BOM Management System</p>
+            <h2>Create a New BOM</h2>
+            <form method="POST">
+                {% csrf_token %}
+                {{ bom_form.as_p }}
+                <button type="button" onclick="window.location.href='{% url 'create_bom' %}'" class="btn">
+                    Create a New BOM
+                </button>
+            </form>
+        </div>
+
+        <div class="card shadow-lg my-4">
+            <div class="card-body bg-dark text-white">
+                <label for="bom-select" class="form-label"><strong>Select BOM:</strong></label>
+                <select id="bom-select" class="form-select form-select-lg mb-3">
+                    <option value="">Select an Item</option>
+                    {% for bom in bom_list %}
+                        <option value="{{ bom.id }}">{{ bom.name }}</option>
+                    {% endfor %}
+                </select>
+
+                <!-- Component Buttons will appear here -->
+                <div id="component-buttons-container" class="mt-3"></div>
+
+                <!-- Display Component and BOM Details -->
+                <div id="item-details"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'records/js/hompage_script.js' %}"></script>
+</body>
+</html>--!>

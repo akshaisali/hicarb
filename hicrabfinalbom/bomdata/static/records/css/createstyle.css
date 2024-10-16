@@ -1,0 +1,60 @@
+body {
+    /* Gradient Background Animation */
+    background: linear-gradient(270deg, #f7f7f7, #000000);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    margin-top: 50px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+}
+
+.btn-custom {
+    background-color: #2575fc;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-custom:hover {
+    background-color: #6a11cb;
+    color: #fff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 20px;
+}
+
+/* Styling the form elements */
+input, select, button {
+    border-radius: 20px;
+}

@@ -1,0 +1,311 @@
+/* General container styling */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+td {
+    background-color: #000000;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #2980b9;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Dropdown content links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Button styling for Create New BOM */
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Heading styles */
+h1, h2, h3, h4 {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Action buttons in tables */
+td .dropdown {
+    display: inline-block;
+}
+
+td .dropbtn {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+h4 {
+    margin-top: 0;
+}
+
+.action1{
+    margin-left: auto;
+}
+.dropbtn1 {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    }
+    .dropbtn2 {
+        background-color: #3498db;
+        color: white;
+        padding: 8px 16px;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        margin-left: 1.7cm;
+        }
+.header{
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+        color: hsl(0, 0%, 99%);
+        font-family: 'Arial', sans-serif;
+        margin-bottom: 10px;
+    }
+.createbom{
+    text-align: center;
+}
+/* styles.css */
+
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Use a clean and modern font */
+    line-height: 1.6; /* Improves readability */
+    background-color: #f4f4f4; /* Light gray background for the body */
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px; /* Limit the width of the container */
+    margin: 20px auto; /* Center the container and provide some top margin */
+    padding: 20px; /* Padding around the container */
+    background: white; /* White background for the content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Smooth corners for the container */
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 28px; /* Larger font size for the main heading */
+    margin-bottom: 20px; /* Space below the main heading */
+}
+
+h2 {
+    font-size: 22px; /* Size for subheadings */
+    margin: 20px 0 10px; /* Margins for spacing */
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 30px; /* Space below each form */
+    padding: 15px; /* Padding inside the form */
+    background-color: #f9f9f9; /* Light background for forms */
+    border-radius: 5px; /* Rounded corners for the form */
+    border: 1px solid #ddd; /* Light border around forms */
+}
+
+form input[type="text"], form input[type="number"], form select {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding inside input fields */
+    margin: 10px 0; /* Space above and below input fields */
+    border: 1px solid #ccc; /* Light border for input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+    font-size: 16px; /* Font size for input fields */
+}
+
+form button {
+    display: inline-block; /* Allows margin and padding */
+    padding: 10px 20px; /* Padding inside the button */
+    margin-top: 10px; /* Space above the button */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for the button */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Hand cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Less padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    form input[type="text"], form input[type="number"], form select {
+        font-size: 14px; /* Smaller font size for inputs */
+    }
+
+    form button {
+        font-size: 14px; /* Smaller button text */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px; /* Minimal padding for very small screens */
+    }
+
+    h1 {
+        font-size: 22px; /* Further reduced font size for mobile */
+    }
+
+    h2 {
+        font-size: 18px; /* Further reduced font size for mobile */
+    }
+}
+.textcontainer{
+    text-shadow:rgb(16, 16, 16);
+}
+/* Container for checkboxes arranged in a grid */
+.checkbox-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Set minimum size for each checkbox */
+    gap: 15px; /* Space between checkboxes */
+    margin-bottom: 20px;
+}
+
+/* Styling for each checkbox label to make it look like a button */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #4a9ef1;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Add space between checkbox and text */
+.checkbox-label input {
+    margin-right: 8px;
+}
+
+/* Change background when hovering over checkbox */
+.checkbox-label:hover {
+    background-color: #e9ecef;
+}
+
+/* Checked checkbox style */
+.checkbox-label input:checked + label {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}

@@ -1,0 +1,31 @@
+
+<!doctype html>
+
+<html>
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="{% static 'records/css/initialstyle.css' %}">
+</head>
+
+<body>
+
+  <div class="svg-wrapper">
+    <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+      <rect class="shape" height="60" width="320" />
+
+      <div class="text">Welcome to HiCarb </div>
+
+    </svg>
+  </div>
+</body>
+
+</html>
+<script>
+    // Redirect to the homepage after 5 seconds
+    setTimeout(function() {
+        window.location.href = "{% url 'homepage' %}"; // Make sure this URL is correct
+    }, 5000);
+</script>

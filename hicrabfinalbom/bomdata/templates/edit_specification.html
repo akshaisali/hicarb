@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Specification</title>
+    <link rel="stylesheet" href="{% static 'RECORDS/css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Specification</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <!-- Render the form fields -->
+            {{ form.as_p }}
+            <!-- Save changes button -->
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>
